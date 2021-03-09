@@ -1,0 +1,34 @@
+###Linux
+- Open-source operating systems 
+- Linux distributions: Ubuntu,CentOS,Debian,Red Hat
+- Major impact in IT field
+- Adaptablity and cheap characteristics made it sucusseful
+- Longevity, maturity and security made it most trustable OS available 
+
+##Linux commands
+
+ls  			       //List files in the current director               
+   -l  			       // long listing 
+   -a 			       // lists all files includes hidden files and folders
+mkdir                  //To create a directory 
+cd / 			       //To change the directory 
+        ~              //starting from the root directory
+        ..             //To go back from a folder to the folder before 
+pwd  			       //Shows the current directory path 
+
+cat [filename]   	   //Concatenate and display the content of file
+rm 			           //to delete files and directories 
+   -f [file]           //force remove file  
+   -rf dir             //forcefully deletion of directory 
+sudo                   //Allow a user with proper permissions to execute a command as another user
+
+chmod [permissions] [filename] //changes the permission of file
+curl [URL...]          // Retrieve a web page and display in the terminal
+chown [options] filename   // Allows to change the owner and group owner of a file
+touch <newfile>      	// To create a file
+sudo apt-get            //apt-get used  to intall 
+ps 				        //display your currently active processes
+top 				    //display all running processes
+vi <file>               //Edit file
+cp file1 file2          //copy file1 to file2
+mv file1 file2          //move file1 to file2
