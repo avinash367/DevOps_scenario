@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  jenkins-master:
+    image: jenkins/jenkins:2.222.3
+    ports:
+    # Port used for JNLP jenkins-slave connections, with the Kubernetes plugin it doesn't like to be SSL terminated
+     - "50000:50000"
+     - "8080:8080"
+    volumes:
+      - ~/jenkins:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker
+  vault:
+    image: vault:1.3.0
+    ports:
+      - "8200:8200"
+    cap_add:
+      - IPC_LOCK
+    volumes:
+      - ./srv/vol/vault/logs:/vault/logs
+      - ./srv/vol/vault/file:/vault/file
+      - ./srv/vol/vault/config:/vault/config
+    command: 'vault server -config=/vault/config/vault-config.hcl'
+
+
