@@ -1,0 +1,4 @@
+--Create a container which has all the infra images.
+--This infra images has installation of DevOps tool stack like Awscli,git,Terraform,Kubectl,Helim.
+--This infra images is used as container to run the terraform and other scripts.
+--This task helps me to run all my infras in one container.
