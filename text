@@ -1,0 +1,12 @@
+//Any task from the git hub repository has to be clone on the local repository and write a docker custom file which includes any data extracted from git
+then run a docker file by using commands
+docker build -t custom:0.0.1 .
+//customize docker file is created and tag to it 
+docker tag <image_id> avinash367/dock:custom
+docker login
+docker push avinash367/dock:custom
+
+
+--Create a Dockerfile,which bundles the git repository.
+--The task is to tag and push the docker images using customized Dockerfile into docker hub
+--WHile doing this task i came across the docker ususage and how to write Dockerfile instructions

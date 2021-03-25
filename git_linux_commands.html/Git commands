@@ -1,0 +1,56 @@
+# Git
+Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. 
+Git is a version control system and having a source code history
+Git installed and maintained in locak system
+Git has three main states that your files can reside in : modified, staged and committed.
+        *Modified means that we have changed the file but not yet committed in to your database
+        *staged means that we have modified file in its current version to go ino our next committ snapshot
+        *committed means that the data is safely stored in our local database
+# Git commands
+some of the basic commands I used and found helpful in working and understanding git.
+
+##setup and config
+  git config --global user.name "User name"        // To connect remote server to local server(git) at the first time we used
+  git config --global user.email "email address"   // To link with the email address
+  git clone https://github.com/[username]/[repository-name].git/url. // to copy the repository into the local database.
+
+### creating a project and useful commands
+  git --version                    //To check the current version 
+  git init                         //To intializes the repository
+  git add                          //Adding working directory into stagged area
+  git add .                        //Adding multiples files in a time
+  git add -a                       //Adds all the new files into the stagged area
+  git commit -m "message"          //commit changes from staging area to local repository includes the commit message
+             -am "message"         //all changes in working directory will be commited*
+  git help                         //Display help information about the git
+  git status                       //shows modified files in working directory
+  git branch                       //Lists the  branches in repository
+             -a                    //Lists all branches in remote repository
+             -d                    //Delete  specified branch
+  git checkout <branch_name>       //Get into specified branches
+  git switch <branch name>         //As same as git checkout 
+  git fetch                        //Downloads all history from the remote branches
+  git reset                        //To clean up the current directory undo local changes to the state of a Git repository
+  git log                          //To show commit logs
+          <branch2><branch1>       //Committs on branch1 not in branch2
+          --follow<File>           //change file even across names
+  git diff                         //shows the difference between to commits
+  git show(SHA)                    //Show any object in git in understand format 
+  git rm <File>                    //To removes files from the stagging area 
+  git mv <Existing path><New path> //To moves the files or rename a file in repository
+  git clean                        //To remove the current Display
+  git log --stat -message          // Show all commit logs
+  git config --global core.excludesfile<file> //system wide ignore pattern for all local repository
+  git remote add <alias><url>       //it allows save long urls as short
+  git fetch                         //Downloads all history from the remote branches
+  git merge <branch>                //to connect the two branches
+  git push <branch>                 //Push changes to github
+  git pull                          //update all remote tracking branches, and the currently checked out branch
+  git rebase <branch>               //same as merge command but we cannot change on meged branch
+  git stash                         //to save uncommit changes 
+  fork                              //creates repository in personal space
+
+   
+
+
+
